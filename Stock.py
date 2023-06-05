@@ -3,7 +3,7 @@
 import requests
 import csv
 
-api = "8AY9T9BMCLBIY5MZ"
+api = "enter api key here"
 
 class Stock:
     def __init__(self, symbol: str):
