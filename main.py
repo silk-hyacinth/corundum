@@ -6,6 +6,14 @@ from GraphWidget import GraphWidget
 from main_window import main_window
 
 app = QApplication(sys.argv)
+
+window = main_window()
+
+window.show()
+
+app.exec()
+
+
 #window = QMainWindow()
 
 #IBM = Stock("ibm")
@@ -30,7 +38,7 @@ app = QApplication(sys.argv)
 
 #window.setCentralWidget(plotWidget)
 
-window = main_window()
+
 
 
 #controller = main_window()
@@ -59,12 +67,7 @@ window = main_window()
 #layout.addWidget(plot_widget)
 #window.setLayout(layout)
 
-window.show()
-
 #window.show()
-
-
-app.exec()
 
 # window.show()
 

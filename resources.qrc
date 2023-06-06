@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>radio/checked_radio_purple.svg</file>
+    <file>radio/radio_blue.svg</file>
+    <file>radio/radio_blue_unchecked.svg</file>
+    <file>radio/radio_purple.svg</file>
+    <file>radio/radio_checked.svg</file>
+    <file>radio/radio_unchecked.svg</file>
+  </qresource>
+</RCC>

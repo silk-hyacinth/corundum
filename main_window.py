@@ -7,6 +7,7 @@ from ui_controller import Ui_Form
 from Stock import Stock
 from get_symbols_list import GetSymbolsList
 from PySide6.QtCore import Qt 
+import resources_rc
 
 class main_window(QWidget, Ui_Form):
     def __init__(self):
@@ -79,7 +80,7 @@ class main_window(QWidget, Ui_Form):
         self.exchange = self.exchange_name.text()
 
         try:
-            self.stock = Stock(self.symbol)
+            self.stock = Stock(self.symbol, self.api_line_edit.text())
             self.data = self.stock.get_stock_data(function=self.function, interval=self.interval, output_size=self.data_amount)
         except:
             raise AssertionError ("Retrieving Data Failed")
