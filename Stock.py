@@ -1,7 +1,7 @@
 # @author Ben W
 
 import requests
-import csv
+import csv, sys, os
 
 class Stock:
     api =""
@@ -17,14 +17,14 @@ class Stock:
         try:
             self.api = api.strip().split()[0].upper() # cleans the string a bit.
             if len(self.api) > 5:
-                with open("api.txt", 'w') as f:
+                with open(resource_path("api.txt"), 'w') as f:
                     f.write(self.api)
         
         except:
             print("lol")
             pass
 
-        with open("api.txt", 'r') as f:
+        with open(resource_path("api.txt"), 'r') as f:
             Stock.api = f.read()
 
 
@@ -69,7 +69,7 @@ class Stock:
                 print(row)
 
             #cache
-            with open('a.csv', 'w', newline="") as f:
+            with open(resource_path('a.csv'), 'w', newline="") as f:
                 f.write(decoded)
 
         # print("done
@@ -77,3 +77,13 @@ class Stock:
 
 
 
+def resource_path(relative):
+    #print(os.environ)
+    application_path = os.path.abspath(".")
+    if getattr(sys, 'frozen', False):
+        # If the application is run as a bundle, the pyInstaller bootloader
+        # extends the sys module by a flag frozen=True and sets the app 
+        # path into variable _MEIPASS'.
+        application_path = sys._MEIPASS
+    #print(application_path)
+    return os.path.join(application_path, relative)
