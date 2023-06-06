@@ -1,4 +1,4 @@
-# @author Ben W
+# June 4 2023
 
 import requests
 import csv, sys, os
