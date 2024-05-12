@@ -1,8 +1,7 @@
 # silk-hyacinth/corundum
 #
-# DOWNLOAD THE EXE TO RUN THE APPLICATION WITH ALL DEPENDENCIES ETC. AT https://mega.nz/file/YQ8EhLIJ#nAsoG9ErUDJ1aIIAjLPI3Z65MvBp9oImtlGJLWf2Z-s . 
-
-# MAKE SURE TO HAVE SEGOE UI AND WINGDINGS FONTS INSTALLED
+# Download exe to run application with all dependencies at https://mega.nz/file/YQ8EhLIJ#nAsoG9ErUDJ1aIIAjLPI3Z65MvBp9oImtlGJLWf2Z-s . 
+# Needs segoi ui and wingdings fonts
 
 # API KEY: 
-# WHEN RUNNING YOU WILL NEED TO INPUT AN API KEY. GET THE API KEY AT https://www.alphavantage.co/support/#api-key . 
+# Get API key from https://www.alphavantage.co/support/#api-key . 
